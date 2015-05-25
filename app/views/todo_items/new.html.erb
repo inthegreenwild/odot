@@ -1,0 +1,9 @@
+<%= form_for [@todo_list, @todo_item] do |form| %>
+	<!-- since todo_item is nested inside todo_list in the 
+	routes file you must use both here in th form_for to get
+	to it --> 
+	<%= form.label :content %>
+	<%= form.text_field :content %>
+
+	<%= form.submit "Save" %>
+<% end %> 
